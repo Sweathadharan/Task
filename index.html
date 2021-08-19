@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Camphor";
+  src: url("Fonts/Camphor W04 Bold/Camphor W04 Bold.ttf") format("truetype");
+  font-family: "Fatta Black";
+  src: url("Fonts/Fatta Black W00 Italic/Fatta Black W00 Italic.ttf");
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(to right, rgb(107, 106, 187), rgb(146, 177, 255));
+}
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    170deg,
+    rgb(253, 253, 253) 50%,
+    transparent 50%
+  );
+}
+.col1 {
+  width: 100vw;
+  height: 30vh;
+}
+.col1 .header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  justify-content: space-evenly;
+}
+.col1 .con {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.col2 {
+  display: flex;
+  width: 100vw;
+  min-height: 70vh;
+  flex-direction: row;
+}
+.col2 .left {
+  display: flex;
+  width: 60%;
+  min-height: 100%;
+  justify-content: flex-end;
+}
+.col2 .right {
+  width: 40%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    170deg,
+    rgb(253, 253, 253) 50%,
+    transparent 50%
+  );
+}
+.col1 {
+  width: 100vw;
+  height: 30vh;
+}
+.col1 .header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  justify-content: space-evenly;
+}
+.col1 .con {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.col2 {
+  display: flex;
+  width: 100vw;
+  min-height: 70vh;
+  flex-direction: row;
+}
+.col2 .left {
+  display: flex;
+  width: 60%;
+  min-height: 100%;
+  justify-content: flex-end;
+}
+.col2 .right {
+  width: 40%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+}
+@font-face {
+  font-family: "Camphor";
+  src: url("Fonts/Camphor W04 Bold/Camphor W04 Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Camphor Thin";
+  src: url("Fonts/Camphor W01 Thin/Camphor W01 Thin.ttf") format("truetype");
+}
+.header .par1 {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Camphor";
+  fill: #343b66;
+}
+.header .par2 {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Camphor Thin";
+  font-weight: 500;
+  fill: #343b66;
+}
+.header .par2 ul {
+  list-style: none;
+}
+.header .par2 ul li {
+  float: left;
+  margin: 20px;
+  cursor: pointer;
+}
+.header .par2 ul li svg {
+  fill: #343b66;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+.con .topic {
+  font-family: "Camphor Thin";
+  color: #343b66;
+  font-weight: 600;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.con .content {
+  width: 40%;
+  font-family: "Camphor Thin";
+  color: rgba(52, 59, 102, 0.5);
+  letter-spacing: 0.7px;
+  font-size: 18px;
+  text-align: center;
+}
+@font-face {
+  font-family: "Camphor Thin";
+  src: url("Fonts/Camphor W01 Thin/Camphor W01 Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Camphor";
+  src: url("Fonts/Camphor W04 Bold/Camphor W04 Bold.ttf") format("truetype");
+}
+* {
+  font-family: "Camphor";
+  color: #4a5077;
+}
+.left form {
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.07);
+}
+.left form .input {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.left form .input .label {
+  padding-top: 10px;
+}
+.left form .input .field {
+  width: 70%;
+  background-color: rgba(146, 177, 255, 0.075);
+  border-radius: 4px;
+  height: 30px;
+}
+.left form .input .field input[id="card"] {
+  width: 90%;
+}
+.left form .input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+*::placeholder {
+  color: rgba(52, 59, 102, 0.2);
+  font-weight: normal;
+}
+.left form .input label {
+  font-size: 16px;
+  font-family: "Camphor";
+}
+.left form .input .field select,
+.left form .input .field select option {
+  border: none;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+.left form .input .field select {
+  background-color: transparent;
+}
+.tip {
+  font-size: 14px;
+  color: rgba(52, 59, 102, 0.2);
+  width: 30%;
+}
+.left form .input .textarea {
+  height: 100px;
+}
+.left form .input .textarea textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+.left form .but {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.left form .but button {
+  background-color: rgb(107, 106, 187);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px 40px;
+  cursor: pointer;
+  color: white;
+}
+@font-face {
+  font-family: "Camphor Thin";
+  src: url("Fonts/Camphor W01 Thin/Camphor W01 Thin.ttf") format("truetype");
+}
+.right {
+  line-height: 30px;
+}
+.right .topic {
+  padding-top: 40px;
+}
+.right .content {
+  color: rgba(255, 255, 255, 0.5);
+}
+.right .logos {
+  padding-top: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.right .logos ul {
+  list-style: none;
+}
+.right .logos ul li {
+  max-width: 150px;
+  height: 30px;
+  float: left;
+  overflow: hidden;
+  padding: 5px 10px 5px 0;
+  stroke: white;
+}
+.right .logos ul li img {
+  max-width: 150px;
+  object-fit: contain;
+  height: 30px;
+}
+</style>
+</head>
+<body>
+    <div class="root">
+        <div class="col1">
+            <div class="header">
+                <div class="par1">
+                    stripe
+                </div>
+                <div class="par2">
+                    <ul>
+                        <li>Support</li>
+                        <li>Sign in 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 42.67" style="width: 10px;">                                                        
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M63.22,19.57,44.5.78a2.67,2.67,0,0,0-3.78,3.77L54.79,18.67H2.67a2.67,2.67,0,1,0,0,5.33H55L40.73,38.11a2.67,2.67,0,1,0,3.76,3.78L63.21,23.35a2.67,2.67,0,0,0,0-3.78Z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con">
+                <div class="topic">
+                    Contact our sales team
+                </div>
+                <div class="content">
+                    Our team is happy to answer your sales questions. Fill out the form and we'll be in touch as soon as possible.
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="left">
+                <form>
+                    <div class="input">
+                        <div class="label">Your first name</div>
+                        <div class="field">
+                            <input id='card' type="text" placeholder="Jane">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="margin-top:5px; opacity:0.5" width='20px' viewBox="0 0 576 512"><path  d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"/></svg>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="label">Your last name</div>
+                        <div class="field">
+                            <input type="text" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="label">Your work email</div>
+                        <div class="field">
+                            <input type="text" placeholder="jane.doe@example.com">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="label">Company website</div>
+                        <div class="field">
+                            <input type="text" placeholder="example.com">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="label">Country</div>
+                        <div class="field">
+                            <select>
+                                <option class='custom-option' value="United States" selected>United States</option>
+                                <option class='custom-option' value="United Kingdom" selected>United Kingdom</option>
+                                <option class='custom-option' value="Asia">Asia</option>
+                                <option class='custom-option' value="Australia">Australia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="label">Payments volume</div>
+                        <div class="field">
+                            <select style="  color: rgba(52, 59, 102, 0.2);">
+                                <option class="custom-option-head"" value="" disabled selected>Select a monthly amount</option>
+                                <option class="custom-option" value="50000">50,000</option>
+                                <option class="custom-option" value="100000">1,00,000</option>
+                                <option class="custom-option" value="200000">2,00,000</option>
+                                <option class="custom-option" value="300000">3,00,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        How much money your business processes online each month.
+                    </div>
+                    <div class="input">
+                        <div class="label">Anything else?</div>
+                        <div class="field textarea">
+                            <textarea cols="50" rows="5" placeholder="Tell us more about your project, needs, and timeline."></textarea>
+                        </div>
+                    </div>
+                    <div class="but">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="right">
+                <div class="topic">
+                    You're in good company.
+                </div>
+                <div class="content">Join 100,000+ business on Stripe.</div>
+                <div class="logos">
+                    <ul>
+                        <li>
+                            <img src="images/kickstarter.png" alt="kickstarter">
+                        </li>
+                        <li>
+                            <img src="images/PicsArt_08-18-01.57.02.png" alt="lyft">
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <img src="images/instacart.png" alt="instacart">
+                        </li>
+                        <li>
+                            <img src="images/pinterest.png" alt="pinterest">
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <img src="images/shopify.png" alt="shopify">
+                        </li>
+                        <li>
+                            <img src="images/opentable.png" alt="opentable">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
+
+
